@@ -1,0 +1,95 @@
+.modal-container {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.modal {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.244);
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgba(175, 172, 172, 0.098);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.311);
+}
+.close-modal {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.726);
+}
+.inpts-container {
+  display: flex;
+  width: 100%;
+  padding: 15px 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.label-select-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.btn-container {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(175, 172, 172, 0.098);
+  border-top: 2px solid rgba(128, 128, 128, 0.211);
+}
+.btn-container button {
+  margin: 0px 7px;
+}
+.label-select-container label {
+  padding: 7px 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.label-select-container input,
+select {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 7px;
+  letter-spacing: 1.5px;
+  border: 1px solid rgba(128, 128, 128, 0.38);
+}
+.label-select-container input:focus {
+  outline: 2px solid rgba(53, 214, 232, 0.58);
+}
+
+@media (max-width: 550px) {
+  .modal {
+    width: 80%;
+  }
+  .inpts-container {
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+  .label-select-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+  .label-select-container input,
+  select {
+    height: 45px;
+  }
+}
